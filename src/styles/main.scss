@@ -1,6 +1,8 @@
 @use "./variaveis.scss";
 @use "./hero";
 @use "./shows";
+@use "./plans";
+@use "./watch-anywhere";
 
 @font-face {
   font-family: Avenir;
@@ -19,6 +21,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Avenir, sans-serif;
+  list-style: none;
 }
 
 body {
@@ -64,4 +67,17 @@ body {
   @include text(18px);
   color: variaveis.$cortextoSecundario;
   text-decoration: underline;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  color: variaveis.$cortextoSecundario;
+  background-color: #6421ff;
+  border-radius: 4px;
+  margin-top: 2vw;
+  margin-bottom: 8px;
+  cursor: pointer;
 }
